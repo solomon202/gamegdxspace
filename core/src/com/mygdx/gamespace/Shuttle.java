@@ -9,9 +9,9 @@ public class Shuttle {
 	Texture img;
 	Vector2 position;
 	
-
+//создаем картинку и позицию 
     public Shuttle(){
-        img = new Texture("badlogic.jpg");
+        img = new Texture("shuttl.jpg");
         position = new Vector2(100,380);
         
     }

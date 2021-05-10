@@ -11,6 +11,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	SpriteBatch batch;
 //	фон что именно ресуем 
 	Background bg;
+	Shuttle shut;
 
     float stateTime;
 //	сформировать в памяти 
@@ -18,6 +19,8 @@ public class MyGdxGame extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		bg = new Background();
+		shut = new Shuttle();
+		
 	}
 //отображать 
 	@Override
@@ -29,6 +32,7 @@ public class MyGdxGame extends ApplicationAdapter {
 //		методы  обьектов связаных с главным классом 
 		batch.begin();
 		bg.render(batch);
+		shut.render(batch);
 		batch.end();
 		 
 		
@@ -37,6 +41,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	public void update(){
 //		запуск метода связаного класса 
       bg.update();
+      
 	}
 //	освободить ресурсы 
 	@Override
