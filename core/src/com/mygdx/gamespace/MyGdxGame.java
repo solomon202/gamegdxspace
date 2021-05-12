@@ -42,6 +42,8 @@ public class MyGdxGame extends ApplicationAdapter {
 //		запуск метода связаного класса 
       bg.update();
       
+      
+      
 	}
 //	освободить ресурсы 
 	@Override
